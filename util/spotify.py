@@ -25,7 +25,6 @@ SPOTIFY_URL_RECENTLY_PLAY = "https://api.spotify.com/v1/me/player/recently-playe
 SPOTIFY_URL_GENERATE_TOKEN = "https://accounts.spotify.com/api/token"
 SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
-
 def get_authorization():
 
     return b64encode(f"{SPOTIFY_CLIENT_ID}:{SPOTIFY_SECRET_ID}".encode()).decode("ascii")
